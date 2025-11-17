@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCon 2024 - Contact Us</title>
+    <style>
+        .map-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> <a href="mailto:email@example.com">email@example.com</a></p>
+            
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://twitter.com/techcon" target="_blank">Twitter/X</a></li>
+                <li><a href="https://linkedin.com/company/techcon" target="_blank">LinkedIn</a></li>
+                <li><a href="https://facebook.com/techcon" target="_blank">Facebook</a></li>
+            </ul>
+        </section>
+
+        <section id="venue-map">
+            <h2>Conference Venue</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.833501700676!2d-0.21051564700080644!3d5.589882260799757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9a706e2269a9%3A0x7d6f582f3c054e0c!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map showing the conference venue in Accra, Ghana"></iframe>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Contact Us Form</h2>
+            <form action="/submit-contact" method="POST">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="email-contact">Your Email:</label>
+                    <input type="email" id="email-contact" name="email-contact" required>
+                </div>
+
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2024 TechCon Conference</p>
+    </footer>
+</body>
+</html>
