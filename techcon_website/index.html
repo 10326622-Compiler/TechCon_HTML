@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 - Home</title>
+    <title>TechCon 2024 - Home of Innovation</title>
 </head>
 <body>
+
+    <!-- Header containing the main conference identity and navigation -->
     <header>
-        <h1>TechCon 2024</h1>
-        <nav>
+        <h1>TechCon 2024: Shaping the Future</h1>
+        <nav aria-label="Main conference navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="register.html">Register</a></li>
@@ -19,22 +20,38 @@
         </nav>
     </header>
 
+    <!-- Main content area of the homepage -->
     <main>
         <section id="introduction">
-            <h2>Welcome to TechCon 2024</h2>
-            <p>Join us for the premier technology conference of the year, bringing together innovators, developers, and industry leaders to discuss the future of AI, cybersecurity, and cloud computing. Network, learn, and be inspired!</p>
-            
-            <video controls width="640" height="360" aria-describedby="video-desc">
-                <source src="techcon_promo.mp4" type="video/mp4">
-                <track kind="captions" src="techcon_promo.vtt" srclang="en" label="English Captions">
-                Your browser does not support the video tag. Please download the video <a href="techcon_promo.mp4">here</a>.
-            </video>
-            <p id="video-desc">Promotional video for the TechCon 2024 conference, showcasing past event highlights and key speakers.</p>
+            <h2>Experience the Edge of Technology</h2>
+            <p>
+                TechCon 2024 is the premier global summit for technological innovation, bringing together thousands of industry leaders, developers, and visionaries. Explore groundbreaking topics in AI, sustainable tech, and digital transformation. Join us this year for three days of unparalleled learning and networking opportunities!
+            </p>
+
+            <!-- Embedded Promotional Video (Accessible) -->
+            <figure>
+                <figcaption>Watch our promotional video to get a glimpse of TechCon 2024.</figcaption>
+                <video controls width="100%" poster="https://placehold.co/600x338/CCCCCC/333333?text=TechCon+Video+Placeholder">
+                    <!-- Placeholder source for the video file -->
+                    <source src="techcon_promo.mp4" type="video/mp4">
+                    <!-- Accessibility: Subtitles/Captions track is required -->
+                    <track 
+                        kind="captions" 
+                        label="English Captions" 
+                        src="techcon_promo.vtt" 
+                        srclang="en" 
+                        default>
+                    <!-- Fallback message for browsers that don't support the video tag -->
+                    Sorry, your browser doesn't support embedded videos. You can download the video <a href="techcon_promo.mp4">here</a>.
+                </video>
+            </figure>
         </section>
     </main>
 
+    <!-- Footer with required copyright information -->
     <footer>
-        <p>copyright &copy; 2024 TechCon Conference</p>
+        <p>copyright &copy; 2024 TechCon Conference. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
